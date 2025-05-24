@@ -1,0 +1,28 @@
+{
+    "files.associations": {
+        "*.cu": "cuda-cpp",
+        "*.cuh": "cuda-cpp",
+        "*.impl": "cpp"
+    },
+    "C_Cpp.default.compilerPath": "/usr/local/cuda/bin/nvcc",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/ThunderKittens/include",
+        "${workspaceFolder}/csrc",
+        "/usr/local/cuda/include"
+    ],
+    "C_Cpp.default.defines": [
+        "KITTENS_HOPPER",
+        "__CUDA_ARCH__=900"
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": false,
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never }",
+    "terminal.integrated.env.linux": {
+        "CUDA_HOME": "/usr/local/cuda-12.6",
+        "THUNDERKITTENS_ROOT": "${workspaceFolder}/ThunderKittens",
+        "PATH": "/usr/local/cuda-12.6/bin:${env:PATH}",
+        "LD_LIBRARY_PATH": "/usr/local/cuda-12.6/lib64:${env:LD_LIBRARY_PATH}"
+    }
+} 
